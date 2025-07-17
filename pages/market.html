@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/marketPage.css">
+    <link rel="short icon" type="favicon" href="../medias/images/favicon.png">
+    <title>Document</title>
+</head>
+<body>
+    <header class="marketHeader">
+            <article class="headerBrand">
+                <img id="logoClub" src="../medias/images/logoClub.webp" alt="Logo da Loja">
+                <h1>Frieren Club</h1>
+            </article>
+    </header>
+    <main class="content">
+        <nav class="sideMenu">
+            <ul class="menuBlock">
+                <li class="pages">
+                    <a href="../index.html" class="pageLink">Sobre Nós</a>
+                </li>
+                <li class="pages">
+                    <a href="../pages/history.html" class="pageLink">História</a>
+                </li>
+                <li class="pages">
+                    <a href="../pages/chatacters.html" class="pageLink">Personagens</a>
+                </li>
+            </ul>
+            <p>|||</p>
+        </nav>
+        <section class="marketPage">
+            <section class="showcase">
+                <article class="showcaseItems">
+                    <img src="../medias/images/vol1.jpg" alt="Primeiro Capítulo de Frieren">
+                    <article class="showcaseItemDescription">
+                        <h1>Preço: R$75,10</h1>
+                        <a href="https://www.amazon.com.br/Frieren-Beyond-Journeys-End-Vol/dp/1974725766" target="_blank">Avaliação do Prouto</a>
+                        <p>Status: Disponivel</p>
+                    </article>
+                </article>
+                <article class="showcaseItems">
+                    <img src="../medias/images/vol7.jpg" alt="7 Capítulo de Frieren">
+                    <article class="showcaseItemDescription">
+                        <h1>Preço: R$74,40</h1>
+                        <a href="https://www.amazon.com.br/Frieren-Beyond-Journeys-End-Vol/dp/1974736202" target="_blank">Avaliação do Prouto</a>
+                        <p>Status: Disponivel</p>
+                    </article>
+                </article>
+                <article class="showcaseItems">
+                    <img src="../medias/images/vol14.png" alt="Ultimo Capítulo de Frieren Lançado">
+                    <article class="showcaseItemDescription">
+                        <h1>Preço: R$74,40</h1>
+                        <a href="https://otakumode.com/shop/676bbd4ce4c345001d73e7a9/Frieren-Beyond-Journey-s-End-Vol-14" target="_blank">Avaliação do Prouto</a>
+                        <p>Status: Disponivel</p>
+                    </article>
+                </article>
+            </section>
+        <section class="buy">
+            <section class="buyFormArea">
+                <article class="buyForm">
+                    <form class="Form" id="buyFormulary">
+                        <div class="formRow">
+                            <div class="formPart">
+                                <label for="select">Volume*: </label>
+                                <br>
+                                <select name="volume" id="volume" type="number" required>
+                                    <option value=1 >1</option>
+                                    <option value=2 >2</option>
+                                    <option value=3 >3</option>
+                                    <option value=4 >4</option>
+                                    <option value=5 >5</option>
+                                    <option value=6 >6</option>
+                                    <option value=7 >7</option>
+                                    <option value=8 >8</option>
+                                    <option value=9 >9</option>
+                                    <option value=10 >10</option>
+                                    <option value=11 >11</option>
+                                    <option value=12 >12</option>
+                                    <option value=13 >13</option>
+                                    <option value=14 >14</option>
+                                </select>
+                            </div>
+                            <div class="formPart">
+                                <label for="input">Quantidade*: </label>
+                                <input name="quantidade" id="quantidade" type="number" required/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <div class="formPart">
+                                <label for="input">Estado*: </label>
+                                <input name="estado" id="estado" type="text" required/>
+                            </div>
+                            <div class="formPart">
+                                <label for="input">Cidade*: </label>
+                                <input name="cidade" id="cidade" type="text" required/>
+                            </div>
+                            <div class="formPart">
+                                <label for="input">Rua*: </label>
+                                <input name="rua" id="rua" type="text" required/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <div class="formPart">
+                                <label for="input">Numero de Telefone*: </label>
+                                <input type="tel" name="numero_de_telefone" id="numero_de_telefone" placeholder="(XX) XXXXX-XXXX" required/>
+                            </div>
+                            <div class="formPart">
+                                <label for="input">Email*: </label>
+                                <input name="email" id="email" type="email" required/>
+                            </div>
+                            <div class="formPart">
+                                <label for="input">Nome*: </label>
+                                <input name="nome" id="nome" type="text" required/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <div class="formPart">
+                                <label for="input">Número do Endereço*: </label>
+                                <input name="numero_do_endereco" id="numero_do_endereco" type="number" required/>
+                            </div>
+                            <div class="formPart">
+                                <label for="input">Número do Ap: </label>
+                                <input name="numero_do_apartamento" id="numero_do_apartamento" type="number"/>
+                            </div>
+                            <div class="formPart">
+                                <label for="input">Complemento: </label>
+                                <input name="complemento" id="complemento" type="text"/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <div class="formPart">
+                                <label for="checkbox">Estou ciente que não ha reembolso fora do prazo de 7 dias.* </label>
+                                <input type="checkbox" name="ciente" id="ciente" value="sim" required/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="formRow">
+                            <div class="formPart">
+                                <button type="submit">pedir agora</button>
+                            </div>
+                            <div class="formPart">
+                                <button type="reset">reiniciar pedido</button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section class="orderInformations">
+                <section class="informationsBox">
+                    <header class="informationsBoxHeader">
+                        <article class="brand">
+                            <img id="logoClub" src="../medias/images/logoClub.webp" alt="Logo da Loja">
+                            <h1>Obrigado por comprar conosco!</h1>
+                        </article>
+                        <p>Sua compra está quase completa, ao enviar suas informações colocaremos aqui seu pedido para confirmação de dados, ao confirmar no botão você será enviado a area de pagamento.</p>
+                    </header>
+                    <article class="informations">
+                        <article class="informationsText" id="informationsText">
+                            <p></p>
+                        </article>
+                    </article>
+                    <article>
+                        <form class="Form" id="informationBoxForm">
+                            <div class="formRow">
+                                <div class="formPart">
+                                    <button type="submit">confirmar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </article>
+                </section>   
+            </section>
+        </section>
+    </main>
+        <footer class="marketFooter">
+            <section class="projectInfos">
+                <article>
+                    <a href="https://github.com/matheuscnifsp/FrierenClub---Trabalho-Final-.git"><img src="../medias/images/gitHubIcon.png" alt="Icone GitHub" id="smallIcon"></a>
+                    <p>Link do Projeto</p>
+                </article>
+                <article>
+                    <a href="https://btv.ifsp.edu.br"><img src="../medias/images/ifspIcon.png" alt="Icone do Instituto" id="smallIcon"></a>
+                    <p>Link do Instituto</p>
+                </article>
+            </section>
+            <p id="copyWarn">Feito por Matheus de Cerqueira Nobre &copy; 2025</p>
+        </footer>
+    </section>
+    <script src="../scripts/marketScript.js"></script>
+</body>

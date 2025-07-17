@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.sideMenu{
+    min-height: 100vh;
+    min-width: 35px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(18,18,18);
+    justify-content: center;
+}
+
+.sideMenu:hover{
+    min-width: 40vh;
+}
+
+.sideMenu p{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.sideMenu:hover p{
+    margin-right: 10px;
+}
+
+.menuBlock{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-image: 
+    linear-gradient(to bottom, rgba(50,50,50,0.6),rgba(20,20,20,0.6)),
+    url("../medias/images/falingStarsWallpaper.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.sideMenu:hover .menuBlock{
+    display: flex;
+}
+
+.brand{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brand h1{
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+#logoClub{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(20,20,20,0.6);
+}
+
+.pages{
+    padding: 5px;
+    margin-inline: 5px;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.pages:hover{
+    padding: 5px;
+    margin-inline: 5px;
+    height: 32px;
+    width: 105%;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pages:hover .pageLink{
+    font-size: 20px;
+}
+
+.pageLink, .pageLink:hover, .pageLink:visited, .pageLink:active, .pageLink:link{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.charactersPage{
+    min-height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(20,20,20), rgb(30,30,30));
+}
+
+.charactersHeader{
+    height: 80px;
+    min-width: 100%;
+    background-color: rgb(18, 18, 18);
+    padding: 10px;
+    align-items: center;
+}
+
+.headerBrand{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.01);
+    gap: 10px;
+}
+
+.headerBrand h1{
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.charactersFooter{
+    height: 140px;
+    min-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+}
+.projectInfos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectInfos article{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30,30,30);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgb(53, 53, 53);
+    text-align: center;
+}
+
+.projectInfos article p{
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+#smallIcon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+#copyWarn{
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.sideMenu{
+    min-height: 100vh;
+    min-width: 35px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(18,18,18);
+    justify-content: center;
+}
+
+.sideMenu:hover{
+    min-width: 40vh;
+}
+
+.sideMenu p{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.sideMenu:hover p{
+    margin-right: 10px;
+}
+
+.menuBlock{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-image: 
+    linear-gradient(to bottom, rgba(50,50,50,0.6),rgba(20,20,20,0.6)),
+    url("../medias/images/falingStarsWallpaper.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.sideMenu:hover .menuBlock{
+    display: flex;
+}
+
+.brand{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brand h1{
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+#logoClub{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(20,20,20,0.6);
+}
+
+.pages{
+    padding: 5px;
+    margin-inline: 5px;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.pages:hover{
+    padding: 5px;
+    margin-inline: 5px;
+    height: 32px;
+    width: 105%;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pages:hover .pageLink{
+    font-size: 20px;
+}
+
+.pageLink, .pageLink:hover, .pageLink:visited, .pageLink:active, .pageLink:link{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.charactersPage{
+    min-height: 100vh;
+    width: 100px;
+    padding: 20px;
+    padding-inline: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, rgb(20,20,20), rgb(30,30,30));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.charactersHeader{
+    height: 80px;
+    min-width: 100%;
+    background-color: rgb(18, 18, 18);
+    padding: 10px;
+    align-items: center;
+}
+
+.headerBrand{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.01);
+    gap: 10px;
+}
+
+.headerBrand h1{
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.charBox {
+    height: 50vh;
+    width: 100%;
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid rgb(18, 18, 18);
+    border-inline: none;
+    align-items: center;
+}
+
+.charBox figcaption{
+    color: whitesmoke;
+}
+
+.charBox figure {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.charBox:hover .charImage{
+    height: 35vh;
+    width: 35vh;
+}
+
+.charBox p {
+    display: none;
+}
+
+.charBox:hover p {
+    width: 100%;
+    height: 80%;
+    margin: 20px;
+    margin-inline: 20px;
+    padding: 40px;
+    background-color: rgba(20,20,20,0.8);
+    border: 1px solid black;
+    border-radius: 15px;
+    color: whitesmoke;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.charImage {
+    height: 25vh;
+    width: 25vh;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#frierenBox {
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.8), rgba(20,20,20,0.8)),
+    url("../medias/images/frierenWallpaper.png");
+}
+
+#frierenBox:hover {
+    height: 80vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,0.4)),
+    url("../medias/images/frierenWallpaper.png");
+}
+
+#himmelBox {
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.8), rgba(20,20,20,0.8)),
+    url("../medias/images/himmelWallpaper.png");
+}
+
+#himmelBox:hover {
+    height: 80vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,0.4)),
+    url("../medias/images/himmelWallpaper.png");
+}
+
+#heiterBox {
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.8), rgba(20,20,20,0.8)),
+    url("../medias/images/heiterWallpaper.jpg");
+    background-position: center top;
+}
+
+#heiterBox:hover {
+    height: 80vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,0.4)),
+    url("../medias/images/heiterWallpaper.jpg");
+}
+
+#eizenBox {
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.8), rgba(20,20,20,0.8)),
+    url("../medias/images/eizenWallpaper.jpg");
+}
+
+#eizenBox:hover {
+    height: 80vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,0.4)),
+    url("../medias/images/eizenWallpaper.jpg");
+}
+
+#fernBox {
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.8), rgba(20,20,20,0.8)),
+    url("../medias/images/fernWallpaper.jpg");
+    background-position: center top;
+}
+
+#fernBox:hover {
+    height: 80vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,0.4)),
+    url("../medias/images/fernWallpaper.jpg");
+}
+
+#starkBox {
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.8), rgba(20,20,20,0.8)),
+    url("../medias/images/starkWallpaper.jpeg");
+}
+
+#starkBox:hover {
+    height: 80vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,0.4)),
+    url("../medias/images/starkWallpaper.jpeg");
+}
+
+.charactersFooter{
+    height: 140px;
+    min-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+}
+.projectInfos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectInfos article{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30,30,30);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgb(53, 53, 53);
+    text-align: center;
+}
+
+.projectInfos article p{
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+#smallIcon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+#copyWarn{
+    color: #ccc;
+}
+
+@media screen and (max-width: 767px) {
+    *{
+        font-size: 12px;
+    }
+
+    .charBox:hover p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    *{
+        font-size: 16px;
+    }
+
+    .charBox:hover p {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.sideMenu{
+    min-height: 100vh;
+    min-width: 35px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(18,18,18);
+    justify-content: center;
+}
+
+.sideMenu:hover{
+    min-width: 40vh;
+}
+
+.sideMenu p{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.sideMenu:hover p{
+    margin-right: 10px;
+}
+
+.menuBlock{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-image: 
+    linear-gradient(to bottom, rgba(50,50,50,0.6),rgba(20,20,20,0.6)),
+    url("../medias/images/falingStarsWallpaper.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.sideMenu:hover .menuBlock{
+    display: flex;
+}
+
+.brand{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brand h1{
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+#logoClub{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(20,20,20,0.6);
+}
+
+.pages{
+    padding: 5px;
+    margin-inline: 5px;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.pages:hover{
+    padding: 5px;
+    margin-inline: 5px;
+    height: 32px;
+    width: 105%;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pages:hover .pageLink{
+    font-size: 20px;
+}
+
+.pageLink, .pageLink:hover, .pageLink:visited, .pageLink:active, .pageLink:link{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.marketPage{
+    min-height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(20,20,20), rgb(30,30,30));
+}
+
+.marketHeader{
+    height: 80px;
+    min-width: 100%;
+    background-color: rgb(18, 18, 18);
+    padding: 10px;
+    align-items: center;
+}
+
+.headerBrand{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.01);
+    gap: 10px;
+}
+
+.headerBrand h1{
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.showcase{
+    min-height: 70vh;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.7), rgba(20,20,20,0.7)),
+    url("../medias/images/marketWallpaper.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.showcaseItems{
+    margin-inline: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.showcaseItems img{
+    height: 320px;
+    width: 224px;
+}
+
+.showcaseItemDescription{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.showcaseItemDescription p, .showcaseItemDescription h1, .showcaseItemDescription a, .showcaseItemDescription a:hover, .showcaseItemDescription a:link, .showcaseItemDescription a:visited, .showcaseItemDescription a:active{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.buy{
+    width: 100%;
+    min-height: 53vh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: 
+    linear-gradient(rgba(20,20,20,0.7), rgba(20,20,20,0.7)),
+    url("../medias/images/buyWallpaper.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orderInformations{
+    min-width: 50vh;
+    max-height: 100%;
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.informationsBox{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgb(56, 56, 56);
+}
+
+.informationsBoxHeader{
+    min-height: 120px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(100,100,100);
+    border: 1px solid rgb(56, 56, 56);
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.informationsBoxHeader p{
+    color: whitesmoke;
+}
+
+.informations{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(56, 56, 56);
+    border-bottom: none;
+}
+
+.informationsText{
+    min-height: 100px;
+    width: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buyFormArea{
+    max-height: 100%;
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.buyForm{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(53, 53, 53);
+}
+
+.Form{
+    padding: 10px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.formRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.formPart{
+    flex: 1;
+}
+
+.formPart input[type="text"], .formPart input[type="number"], .formPart input[type="tel"], .formPart input[type="email"], .formPart select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.formPart button {
+    padding: 5px;
+    margin-inline: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.marketFooter{
+    height: 140px;
+    min-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+}
+.projectInfos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectInfos article{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30,30,30);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgb(53, 53, 53);
+    text-align: center;
+}
+
+.projectInfos article p{
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+#smallIcon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+#copyWarn{
+    color: #ccc;
+}
+
+@media screen and (max-width: 767px) {
+    *{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    *{
+        font-size: 16px;
+    }
+}
